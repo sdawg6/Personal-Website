@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senuji's Travel Diary</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(217, 217, 217);
+            color: black;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(217, 217, 217);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Title Section */
+        .title-section {
+            text-align: center;
+            background-color: white;
+            padding: 2rem 0;
+        }
+
+        .title-section h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: black;
+        }
+
+        .title-section h2 {
+            margin: 0;
+            font-size: 3rem;
+            color: black;
+        }
+
+        /* About Me Section */
+        .about-me {
+            display: flex;
+            align-items: center;
+            background-color: rgb(217, 217, 217);
+            padding: 2rem;
+        }
+
+        .about-me .left {
+            flex: 1;
+        }
+
+        .about-me img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+
+        .about-me .right {
+            flex: 2;
+            margin-left: 2rem;
+        }
+
+        /* Destination Section */
+        .destination {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .destination:nth-child(even) {
+            background-color: white;
+        }
+
+        .destination:nth-child(odd) {
+            background-color: rgb(217, 217, 217);
+        }
+
+        .destination img {
+            width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        table td {
+            padding: 0.5rem 1rem;
+            text-align: center;
+        }
+
+        /* Future Destinations Section */
+        .future-destinations {
+            text-align: center;
+            padding: 2rem;
+            background-color: white;
+        }
+
+        .future-destinations-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .future-destinations img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+
+        .future-destinations p {
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#about-me">About Me</a>
+        <a href="#sri-lanka">Sri Lanka</a>
+        <a href="#alberta">Alberta</a>
+        <a href="#switzerland">Switzerland</a>
+        <a href="#france">France</a>
+        <a href="#wishlist">Wishlist</a>
+    </div>
+
+    <!-- Title Section -->
+    <div class="title-section">
+        <h1>Senuji's</h1>
+        <h2>Travel Diary</h2>
+    </div>
+
+    <!-- About Me Section -->
+    <div class="about-me" id="about-me">
+        <div class="left">
+            <h3>About Me</h3>
+            <img src="https://via.placeholder.com/200" alt="About Me Photo">
+        </div>
+        <div class="right">
+            <p>Traveling has always been a way for me to explore new perspectives and create unforgettable memories. Some of my happiest moments in my life thus far have been exploring the world. I love discovering unique cultures, trying local cuisines, and meeting people whose stories shape the places they call home. This diary is a reflection of my adventures—both past and those I dream of embarking on.</p>
+        </div>
+    </div>
+
+    <!-- Alberta Section -->
+    <div class="destination" id="alberta">
+        <h3>Alberta, Canada</h3>
+        <img src="https://via.placeholder.com/800x400" alt="Alberta Photo">
+        <table>
+            <tr><td>Year Visited: August 2022</td></tr>
+            <tr><td>Best Memory: Hiking through Banff National Park</td></tr>
+            <tr><td>Favourite Attraction: Lake Louise</td></tr>
+        </table>
+    </div>
+
+    <!-- Sri Lanka Section -->
+    <div class="destination" id="sri-lanka">
+        <h3>Sri Lanka</h3>
+        <img src="https://via.placeholder.com/800x400" alt="Sri Lanka Photo">
+        <table>
+            <tr><td>Year Visited: July 2023</td></tr>
+            <tr><td>Best Memory: Driving A TukTuk</td></tr>
+            <tr><td>Favourite Attraction: Sigiriya</td></tr>
+        </table>
+    </div>
+
+    <!-- Switzerland Section -->
+    <div class="destination" id="switzerland">
+        <h3>Switzerland</h3>
+        <img src="https://via.placeholder.com/800x400" alt="Switzerland Photo">
+        <table>
+            <tr><td>Year Visited: July 2024</td></tr>
+            <tr><td>Best Memory: Hiking Stabbauch Falls</td></tr>
+            <tr><td>Favourite Attraction: The mountains of Lauterbrunnen</td></tr>
+        </table>
+    </div>
+
+    <!-- France Section -->
+    <div class="destination" id="france">
+        <h3>France</h3>
+        <img src="https://via.placeholder.com/800x400" alt="France Photo">
+        <table>
+            <tr><td>Year Visited: June 2025</td></tr>
+            <tr><td>Best Memory: Exploring the Eiffel Tower</td></tr>
+            <tr><td>Favourite Attraction: The Louvre</td></tr>
+        </table>
+    </div>
+
+    <!-- Wishlist Section -->
+    <div class="future-destinations" id="wishlist">
+        <h3>Future Destinations</h3>
+        <div class="future-destinations-container">
+            <div>
+                <img src="https://via.placeholder.com/300x200" alt="Japan">
+                <p>Japan</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300x200" alt="Brazil">
+                <p>Brazil</p>
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/300x200" alt="Turkey">
+                <p>Turkey</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

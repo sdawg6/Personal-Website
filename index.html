@@ -89,6 +89,30 @@
             height: auto;
         }
 
+        /* Table Styling */
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 1rem 0;
+            border-radius: 10px; 
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 20px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
         /* Content Spacing & Layout */
         section h3 {
             text-align: center;
@@ -101,16 +125,6 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-        }
-
-        section table {
-            margin: 1rem auto;
-            border-collapse: collapse;
-        }
-
-        section table td {
-            padding: 0.5rem 1rem;
-            text-align: center;
         }
 
         .future-destinations-container {
@@ -153,9 +167,16 @@
         <h3>Sri Lanka</h3>
         <img src="https://via.placeholder.com/800x400" alt="Sri Lanka Photo">
         <table>
-            <tr><td>Year Visited: July 2023</td></tr>
-            <tr><td>Best Memory: Driving A TukTuk</td></tr>
-            <tr><td>Favourite Attraction: Sigiriya</td></tr>
+            <tr>
+                <th>Year Visited</th>
+                <th>Best Memory</th>
+                <th>Favourite Attraction</th>
+            </tr>
+            <tr>
+                <td>July 2023</td>
+                <td>Driving A TukTuk</td>
+                <td>Sigiriya</td>
+            </tr>
         </table>
     </section>
 
@@ -164,9 +185,16 @@
         <h3>Alberta, Canada</h3>
         <img src="https://via.placeholder.com/800x400" alt="Alberta Photo">
         <table>
-            <tr><td>Year Visited: August 2022</td></tr>
-            <tr><td>Best Memory: Hiking through Banff National Park</td></tr>
-            <tr><td>Favourite Attraction: Lake Louise</td></tr>
+            <tr>
+                <th>Year Visited</th>
+                <th>Best Memory</th>
+                <th>Favourite Attraction</th>
+            </tr>
+            <tr>
+                <td>August 2022</td>
+                <td>Hiking Through Banff National Park</td>
+                <td>Lake Louise</td>
+            </tr>
         </table>
     </section>
 
@@ -175,9 +203,16 @@
         <h3>Switzerland</h3>
         <img src="https://via.placeholder.com/800x400" alt="Switzerland Photo">
         <table>
-            <tr><td>Year Visited: July 2024</td></tr>
-            <tr><td>Best Memory: Hiking Stabbauch Falls</td></tr>
-            <tr><td>Favourite Attraction: The mountains of Lauterbrunnen</td></tr>
+            <tr>
+                <th>Year Visited</th>
+                <th>Best Memory</th>
+                <th>Favourite Attraction</th>
+            </tr>
+            <tr>
+                <td>July 2024</td>
+                <td>Hiking Stabbauch Falls</td>
+                <td>The Mountains Of Lauterbrunnen</td>
+            </tr>
         </table>
     </section>
 
@@ -186,9 +221,16 @@
         <h3>France</h3>
         <img src="https://via.placeholder.com/800x400" alt="France Photo">
         <table>
-            <tr><td>Year Visited: June 2025</td></tr>
-            <tr><td>Best Memory: Exploring the Eiffel Tower</td></tr>
-            <tr><td>Favourite Attraction: The Louvre</td></tr>
+            <tr>
+                <th>Year Visited</th>
+                <th>Best Memory</th>
+                <th>Favourite Attraction</th>
+            </tr>
+            <tr>
+                <td>June 2025</td>
+                <td>Exploring the Eiffel Tower</td>
+                <td>The Louvre</td>
+            </tr>
         </table>
     </section>
 
